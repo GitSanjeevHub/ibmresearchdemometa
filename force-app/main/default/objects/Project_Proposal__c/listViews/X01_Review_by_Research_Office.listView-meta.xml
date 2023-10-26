@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X01_Review_by_Research_Office</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Organisation__c</columns>
+    <columns>Funding_Opportunity__c</columns>
+    <columns>Submission_Date__c</columns>
+    <columns>Lead_Chief_Investigator__c</columns>
+    <columns>First_Approver__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Review by Research Office</value>
+    </filters>
+    <label>01-Review by Research Office</label>
+</ListView>

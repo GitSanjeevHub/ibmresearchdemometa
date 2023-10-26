@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Captures configuration settings for uses of Search and Match Components, such as table columns, filters and row-level actions</description>
+    <label>Search Component Configuration</label>
+    <pluralLabel>Search Component Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

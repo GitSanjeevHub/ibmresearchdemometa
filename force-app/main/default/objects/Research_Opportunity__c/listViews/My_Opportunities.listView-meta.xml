@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Opportunities</fullName>
+    <columns>NAME</columns>
+    <columns>Funder__c</columns>
+    <columns>Funding_Category__c</columns>
+    <columns>Duration__c</columns>
+    <columns>Research_Office_Contact_Person__c</columns>
+    <columns>Submission_Date__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Opportunities</label>
+</ListView>

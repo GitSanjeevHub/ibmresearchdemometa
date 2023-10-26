@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Funding Opportunity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Funding Opportunities</value>
+    </caseValues>
+    <layouts>
+        <layout>Funding Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Funds specific</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Important Dates</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Names</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Express_Interest</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Currency_cannot_be_negative</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>End_Date</name>
+    </validationRules>
+</CustomObjectTranslation>

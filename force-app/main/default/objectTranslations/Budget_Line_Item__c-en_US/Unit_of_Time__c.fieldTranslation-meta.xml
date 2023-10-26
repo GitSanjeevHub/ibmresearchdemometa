@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Unit_of_Time__c</name>
+    <picklistValues>
+        <masterLabel>Cannot enter more than 1 year per Units column</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannot enter more than 12 months per Units column</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannot enter more than 1645 hours per Units column</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannot enter more than 235 days per Units column</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cannot enter more than 47 weeks per Units column</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

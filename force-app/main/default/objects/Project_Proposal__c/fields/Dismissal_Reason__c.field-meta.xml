@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dismissal_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Dismissal Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Workload</fullName>
+                <default>false</default>
+                <label>Workload</label>
+            </value>
+            <value>
+                <fullName>Research not in scope</fullName>
+                <default>false</default>
+                <label>Research not in scope</label>
+            </value>
+            <value>
+                <fullName>Not eligible to apply</fullName>
+                <default>false</default>
+                <label>Not eligible to apply</label>
+            </value>
+            <value>
+                <fullName>Other commitments prevent meeting time line</fullName>
+                <default>false</default>
+                <label>Other commitments prevent meeting time line</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

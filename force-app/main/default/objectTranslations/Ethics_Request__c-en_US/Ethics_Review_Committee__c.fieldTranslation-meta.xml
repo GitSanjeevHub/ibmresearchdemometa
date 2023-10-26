@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Ethics_Review_Committee__c</name>
+    <picklistValues>
+        <masterLabel>Animal Ethics Committee</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human Research Ethics Committee (HREC)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Low Risk Committee</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>My Uni Institutional Biosafety Committee</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

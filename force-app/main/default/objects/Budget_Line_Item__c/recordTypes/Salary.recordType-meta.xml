@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salary</fullName>
+    <active>true</active>
+    <label>Salary</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Adjustment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current La Trobe staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Future La Trobe staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HDR Stipends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-La Trobe researcher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personnel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Assistant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching Relief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SAP_Category__c</picklist>
+        <values>
+            <fullName>Advertising%2F Promotional Activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plants %26 Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2FConsulting%2FContractual Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repairs%2FMaintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salary Costs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>Level A 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level A 8</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unit_of_Time__c</picklist>
+        <values>
+            <fullName>Cannot enter more than 1 year per Units column</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot enter more than 12 months per Units column</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot enter more than 1645 hours per Units column</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot enter more than 235 days per Units column</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot enter more than 47 weeks per Units column</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

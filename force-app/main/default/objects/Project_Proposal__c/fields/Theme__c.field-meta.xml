@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Theme__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select which theme(s) this project aligns to.</inlineHelpText>
+    <label>Theme Alignment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tropical ecosystems, conservation and climate change</fullName>
+                <default>false</default>
+                <label>Tropical ecosystems, conservation and climate change</label>
+            </value>
+            <value>
+                <fullName>Industries and economies in the tropics</fullName>
+                <default>false</default>
+                <label>Industries and economies in the tropics</label>
+            </value>
+            <value>
+                <fullName>People and societies in the tropics, and</fullName>
+                <default>false</default>
+                <label>People and societies in the tropics, and</label>
+            </value>
+            <value>
+                <fullName>Tropical health, medicine and biosecurity</fullName>
+                <default>false</default>
+                <label>Tropical health, medicine and biosecurity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

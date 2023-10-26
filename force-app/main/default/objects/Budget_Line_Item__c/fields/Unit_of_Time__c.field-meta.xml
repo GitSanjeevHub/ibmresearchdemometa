@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_of_Time__c</fullName>
+    <externalId>false</externalId>
+    <label>Unit of Time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cannot enter more than 1 year per Units column</fullName>
+                <default>false</default>
+                <label>Cannot enter more than 1 year per Units column</label>
+            </value>
+            <value>
+                <fullName>Cannot enter more than 12 months per Units column</fullName>
+                <default>false</default>
+                <label>Cannot enter more than 12 months per Units column</label>
+            </value>
+            <value>
+                <fullName>Cannot enter more than 1645 hours per Units column</fullName>
+                <default>false</default>
+                <label>Cannot enter more than 1645 hours per Units column</label>
+            </value>
+            <value>
+                <fullName>Cannot enter more than 235 days per Units column</fullName>
+                <default>false</default>
+                <label>Cannot enter more than 235 days per Units column</label>
+            </value>
+            <value>
+                <fullName>Cannot enter more than 47 weeks per Units column</fullName>
+                <default>false</default>
+                <label>Cannot enter more than 47 weeks per Units column</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

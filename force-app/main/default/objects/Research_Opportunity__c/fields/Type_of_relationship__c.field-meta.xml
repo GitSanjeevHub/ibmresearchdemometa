@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_relationship__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of relationship</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Collaborator</fullName>
+                <default>false</default>
+                <label>Collaborator</label>
+            </value>
+            <value>
+                <fullName>Sub-contractor</fullName>
+                <default>false</default>
+                <label>Sub-contractor</label>
+            </value>
+            <value>
+                <fullName>Funding body/client (i.e. awards)</fullName>
+                <default>false</default>
+                <label>Funding body/client (i.e. awards)</label>
+            </value>
+            <value>
+                <fullName>Transfer In</fullName>
+                <default>false</default>
+                <label>Transfer In</label>
+            </value>
+            <value>
+                <fullName>Transfer Out</fullName>
+                <default>false</default>
+                <label>Transfer Out</label>
+            </value>
+            <value>
+                <fullName>Relinquish</fullName>
+                <default>false</default>
+                <label>Relinquish</label>
+            </value>
+            <value>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+                <label>Terminated</label>
+            </value>
+            <value>
+                <fullName>Transfer of administration to My Uni</fullName>
+                <default>false</default>
+                <label>Transfer of administration to My Uni</label>
+            </value>
+            <value>
+                <fullName>Transfer of administration from My Uni</fullName>
+                <default>false</default>
+                <label>Transfer of administration from My Uni</label>
+            </value>
+            <value>
+                <fullName>Transfer of administration from JCU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transfer of administration from JCU</label>
+            </value>
+            <value>
+                <fullName>Transfer of administration to JCU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Transfer of administration to JCU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

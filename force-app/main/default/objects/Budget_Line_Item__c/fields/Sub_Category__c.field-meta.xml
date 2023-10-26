@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Category</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Level A 1</fullName>
+                <default>false</default>
+                <label>Level A 1</label>
+            </value>
+            <value>
+                <fullName>Level A 2</fullName>
+                <default>false</default>
+                <label>Level A 2</label>
+            </value>
+            <value>
+                <fullName>Level A 3</fullName>
+                <default>false</default>
+                <label>Level A 3</label>
+            </value>
+            <value>
+                <fullName>Level A 4</fullName>
+                <default>false</default>
+                <label>Level A 4</label>
+            </value>
+            <value>
+                <fullName>Level A 5</fullName>
+                <default>false</default>
+                <label>Level A 5</label>
+            </value>
+            <value>
+                <fullName>Level A 6</fullName>
+                <default>false</default>
+                <label>Level A 6</label>
+            </value>
+            <value>
+                <fullName>Level A 7</fullName>
+                <default>false</default>
+                <label>Level A 7</label>
+            </value>
+            <value>
+                <fullName>Level A 8</fullName>
+                <default>false</default>
+                <label>Level A 8</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Level A 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Level A 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Equipment</controllingFieldValue>
+            <valueName>Level A 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Travel</controllingFieldValue>
+            <valueName>Level A 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Travel</controllingFieldValue>
+            <valueName>Level A 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Field Work</controllingFieldValue>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Level A 7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Current La Trobe staff</controllingFieldValue>
+            <valueName>Level A 8</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

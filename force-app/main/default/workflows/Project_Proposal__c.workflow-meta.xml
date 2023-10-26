@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Field_Update_to_Seek_Approval</fullName>
+        <description>This &quot;Field Update&quot; updates the Status field value to &quot;Approvals&quot; .</description>
+        <field>Status__c</field>
+        <literalValue>Approvals</literalValue>
+        <name>Field Update to Seek Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_to_Review_by_Research_Offi</fullName>
+        <description>The records which are not approved should move to Review by Research Office</description>
+        <field>Status__c</field>
+        <literalValue>Review by Research Office</literalValue>
+        <name>Status Update to Review by Research Offi</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_update_for_Approval</fullName>
+        <description>The Approved status records should be moved to &quot;Ready for Submission to Funding Body&quot;</description>
+        <field>Status__c</field>
+        <literalValue>Ready for Submission to Funding Body</literalValue>
+        <name>Status update for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,73 @@
+<template>
+
+    <template if:true={config}>
+
+        <c-lwc-wire-get-object-info
+            object-name={config.objectName}
+            onwire={handleObjectInfoWire}
+            >
+        </c-lwc-wire-get-object-info>
+        
+
+        <c-lwc-wire-get-record
+            record-id={recordId}
+            fields={config.hostRecordFields}
+            onwire={handleHostRecordWire}
+            >
+        </c-lwc-wire-get-record>
+        
+
+        <c-lwc-wire-get-record-type-infos
+            object-api-name={config.objectName}
+            onwire={handleRecordTypeInfoWire}
+        >
+        </c-lwc-wire-get-record-type-infos>
+
+
+        <template if:true={recordTypeId}>
+
+            <c-lwc-wire-picklist-by-record-type
+                object-api-name={config.objectName}
+                record-type-id={recordTypeId}
+                onwire={handlePicklistWire}
+            >
+            </c-lwc-wire-picklist-by-record-type>
+        </template>
+        
+
+        <template if:true={loadComplete}>
+
+            <c-editable-grid2
+            
+                config-api={config}
+
+                record-id={recordId}
+                record-type-id={recordTypeId}
+                host-record-api={hostRecord}
+                object-metadata={objectMetadata}
+                picklist-metadata={picklistMetadata}
+
+                lookup-defaults={lookupDefaults}
+                column-expansion-levels-api={columnExpansionLevelValues}
+                
+                onsuccessfulsave={handleSuccessfulSave}
+
+                recalculate-record-list-when-host-record-changes={recalculateRecordListWhenHostRecordChanges}
+                >
+            </c-editable-grid2>
+            
+
+        </template>
+
+        <template if:false={loadComplete}>
+
+            <div style="padding:30vh">
+                <lightning-spinner variant="brand" size="large"></lightning-spinner>
+            </div>
+
+        </template>
+
+
+    </template>
+
+</template>

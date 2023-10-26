@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NOI_Round__c</fullName>
+    <description>Indicating which NOI process this opportunity belongs to</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Notice of Intent Round</inlineHelpText>
+    <label>NOI Round</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ARC/NHMRC 2021</fullName>
+                <default>false</default>
+                <label>ARC/NHMRC 2021</label>
+            </value>
+            <value>
+                <fullName>Linkage 2021</fullName>
+                <default>false</default>
+                <label>Linkage 2021</label>
+            </value>
+            <value>
+                <fullName>Fellowship 2021</fullName>
+                <default>false</default>
+                <label>Fellowship 2021</label>
+            </value>
+            <value>
+                <fullName>Limited Applications</fullName>
+                <default>false</default>
+                <label>Limited Applications</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

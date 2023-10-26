@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fields of Research (FOR)</fullName>
+                <default>false</default>
+                <label>FOR - Fields of Research</label>
+            </value>
+            <value>
+                <fullName>Fields of Research - 2008 (FOR - 08)</fullName>
+                <default>false</default>
+                <label>FOR 08 - Fields of Research - 2008</label>
+            </value>
+            <value>
+                <fullName>Socio-economic Objective (SEO)</fullName>
+                <default>false</default>
+                <label>SEO - Socio-economic Objective</label>
+            </value>
+            <value>
+                <fullName>Socio-economic Objective - 2008 (SEO - 08)</fullName>
+                <default>false</default>
+                <label>SEO 08 - Socio-economic Objective - 2008</label>
+            </value>
+            <value>
+                <fullName>Type of Activity (TOA)</fullName>
+                <default>false</default>
+                <label>TOA - Type of Activity</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

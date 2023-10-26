@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Types_of_Engagement_Opportunities__c</fullName>
+    <externalId>false</externalId>
+    <label>Types of Engagement Opportunities</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advocacy and Influence</fullName>
+                <default>false</default>
+                <label>Advocacy and Influence</label>
+            </value>
+            <value>
+                <fullName>Appointments (e.g. Adjunct, Chair, etc.)</fullName>
+                <default>false</default>
+                <label>Appointments (e.g. Adjunct, Chair, etc.)</label>
+            </value>
+            <value>
+                <fullName>Capital Building and Master Plan - Capital raising</fullName>
+                <default>false</default>
+                <label>Capital Building and Master Plan - Capital raising</label>
+            </value>
+            <value>
+                <fullName>Capital Building and Master Plan - Co-location (general)</fullName>
+                <default>false</default>
+                <label>Capital Building and Master Plan - Co-location (general)</label>
+            </value>
+            <value>
+                <fullName>Capital Building and Master Plan - Joint ventures</fullName>
+                <default>false</default>
+                <label>Capital Building and Master Plan - Joint ventures</label>
+            </value>
+            <value>
+                <fullName>Capital Building and Master Plan - other(e.g. University City of the Future)</fullName>
+                <default>false</default>
+                <label>Capital Building and Master Plan - other(e.g. University City of the Future)</label>
+            </value>
+            <value>
+                <fullName>Consultancy</fullName>
+                <default>false</default>
+                <label>Consultancy</label>
+            </value>
+            <value>
+                <fullName>Contract research</fullName>
+                <default>false</default>
+                <label>Contract research</label>
+            </value>
+            <value>
+                <fullName>Joint Venture</fullName>
+                <default>false</default>
+                <label>Joint Venture</label>
+            </value>
+            <value>
+                <fullName>Non-research</fullName>
+                <default>false</default>
+                <label>Non-research</label>
+            </value>
+            <value>
+                <fullName>Philanthropy</fullName>
+                <default>false</default>
+                <label>Philanthropy</label>
+            </value>
+            <value>
+                <fullName>Public Good - Co-branding arrangements</fullName>
+                <default>false</default>
+                <label>Public Good - Co-branding arrangements</label>
+            </value>
+            <value>
+                <fullName>Public Good - Community outreach</fullName>
+                <default>false</default>
+                <label>Public Good - Community outreach</label>
+            </value>
+            <value>
+                <fullName>Public Good - Community engagement</fullName>
+                <default>false</default>
+                <label>Public Good - Community engagement</label>
+            </value>
+            <value>
+                <fullName>Public Good - other (e.g. lectures, events, knowledge dissemination)</fullName>
+                <default>false</default>
+                <label>Public Good - other (e.g. lectures, events, knowledge dissemination)</label>
+            </value>
+            <value>
+                <fullName>Public Good - Social, cultural and environmental activities</fullName>
+                <default>false</default>
+                <label>Public Good - Social, cultural and environmental activities</label>
+            </value>
+            <value>
+                <fullName>Research - Contracts</fullName>
+                <default>false</default>
+                <label>Research - Contracts</label>
+            </value>
+            <value>
+                <fullName>Research - Collaborative research</fullName>
+                <default>false</default>
+                <label>Research - Collaborative research</label>
+            </value>
+            <value>
+                <fullName>Research - Co-location (Research &amp; Innovation Precinct)</fullName>
+                <default>false</default>
+                <label>Research - Co-location (Research &amp; Innovation Precinct)</label>
+            </value>
+            <value>
+                <fullName>Research - Industry PhDs</fullName>
+                <default>false</default>
+                <label>Research - Industry PhDs</label>
+            </value>
+            <value>
+                <fullName>Research - Licencing / Spin-out / Commercialisation</fullName>
+                <default>false</default>
+                <label>Research - Licencing / Spin-out / Commercialisation</label>
+            </value>
+            <value>
+                <fullName>Research – other and Consulting</fullName>
+                <default>false</default>
+                <label>Research – other and Consulting</label>
+            </value>
+            <value>
+                <fullName>Research - Research</fullName>
+                <default>false</default>
+                <label>Research - Research</label>
+            </value>
+            <value>
+                <fullName>Research - scholarships</fullName>
+                <default>false</default>
+                <label>Research - scholarships</label>
+            </value>
+            <value>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+                <label>Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Start-up / La Trobe Accelerator Program</fullName>
+                <default>false</default>
+                <label>Start-up / La Trobe Accelerator Program</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Articulation partners</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Articulation partners</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Courseware licencing</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Courseware licencing</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Executive Education</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Executive Education</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Field trip locations</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Field trip locations</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Internships</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Internships</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Mentoring</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Mentoring</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - other</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - other</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Placements / Projects</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Placements / Projects</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Provision of teaching materials</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Provision of teaching materials</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Student exchange</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Student exchange</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning - Work Integrated Learning / Industry-Based Learning</fullName>
+                <default>false</default>
+                <label>Teaching and Learning - Work Integrated Learning / Industry-Based Learning</label>
+            </value>
+            <value>
+                <fullName>Vendor / Supplier</fullName>
+                <default>false</default>
+                <label>Vendor / Supplier</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

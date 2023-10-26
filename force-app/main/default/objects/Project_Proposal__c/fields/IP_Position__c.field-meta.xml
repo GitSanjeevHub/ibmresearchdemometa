@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IP_Position__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Nominate preferred position toward ownership of intellectual property created under the project (Project IP). If Project IP is owned by the other party, we can request rights to use the Project IP. This may change upon Agreement finalisation.</inlineHelpText>
+    <label>IP Position</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Owned by My Uni</fullName>
+                <default>false</default>
+                <label>Owned by My Uni</label>
+            </value>
+            <value>
+                <fullName>Jointly owned</fullName>
+                <default>false</default>
+                <label>Jointly owned</label>
+            </value>
+            <value>
+                <fullName>Owned by other organisation with rights for My Uni to use for research and teaching</fullName>
+                <default>false</default>
+                <label>Owned by other organisation with rights for My Uni to use for research and teaching</label>
+            </value>
+            <value>
+                <fullName>Owned by other organisation – no rights to My Uni to use</fullName>
+                <default>false</default>
+                <label>Owned by other organisation – no rights to My Uni to use</label>
+            </value>
+            <value>
+                <fullName>Owned by JCU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Owned by JCU</label>
+            </value>
+            <value>
+                <fullName>Owned by other organisation with rights for JCU to use for research and teaching</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Owned by other organisation with rights for JCU to use for research and teaching</label>
+            </value>
+            <value>
+                <fullName>Owned by other organisation – no rights to JCU to use</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Owned by other organisation – no rights to JCU to use</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

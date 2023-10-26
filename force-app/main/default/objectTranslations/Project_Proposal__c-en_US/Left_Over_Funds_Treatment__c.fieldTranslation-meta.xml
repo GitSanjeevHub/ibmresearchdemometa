@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>Left_Over_Funds_Treatment__c</name>
+    <picklistValues>
+        <masterLabel>Returned to client/funding body</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred to nominated account</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transferred to outside earnings account</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification_Code_Compact_Layout</fullName>
+    <fields>Active__c</fields>
+    <fields>Project_Proposal__c</fields>
+    <fields>Name</fields>
+    <fields>Researcher__c</fields>
+    <fields>CreatedById</fields>
+    <label>Classification Code Compact Layout</label>
+</CompactLayout>

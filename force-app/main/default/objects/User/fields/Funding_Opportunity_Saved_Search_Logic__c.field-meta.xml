@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opportunity_Saved_Search_Logic__c</fullName>
+    <description>Filter Logic (e.g. 1 OR 2 AND 3) for Funding Opportunity Search that User has saved to profile</description>
+    <externalId>false</externalId>
+    <label>Funding Opportunity Saved Search Logic</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

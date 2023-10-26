@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Original_Creative_Work_Type__c</name>
+    <picklistValues>
+        <masterLabel>Design/architectural work</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other creative work (including scholarly editions and scholarly translations)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Textual creative work</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visual art work</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

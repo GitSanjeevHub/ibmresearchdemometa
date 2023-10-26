@@ -1,0 +1,352 @@
+<template>
+    
+    <template if:false={config.hideUI}>
+        
+        <article class="slds-card">
+
+            <template if:true={config.cardTitle}>
+
+                <div class="slds-card__header slds-grid">
+
+                    <h2 class="slds-text-heading_large">
+                        {config.cardTitle}
+                    </h2>
+
+                </div>
+
+            </template>
+
+
+            <div data-id="scrollableSection" style="overflow-x:auto;width:100%">
+
+                <!--<div class="slds-p-around_medium">-->
+
+                <table class="slds-table slds-table_bordered">
+                    <!--slds-table_cell-buffer-->
+
+
+                    <thead style="display:block">
+                        <tr>
+
+                            <!--Status Icons go in this column-->
+                            <th data-name="statusIcons" style='max-width:100px'></th>
+                            <!--Row-level actions go here-->
+                            <th data-name="actions" style='max-width:80px'></th>
+
+                            <!--Column headers - clicking header sorts by that field-->
+                            <template for:each={columns} for:item="column">
+
+
+                                <th key={column.label} data-name={column.fieldName} style={column.style}>
+                                    
+                                    <c-editable-grid-header-cell 
+                                        title={column.label} 
+                                        field-name={column.fieldName}
+                                        help-text={column.helpText}
+                                        onheaderclick={handleSortDataEvent}>
+                                    </c-editable-grid-header-cell>
+
+                                </th>
+
+                                
+                            </template>
+
+                        </tr>
+                    </thead>
+                
+
+
+                    <tbody style={tableBodyStyle}>
+                    <!--<tbody style="display:block;width:100%">-->
+
+                        
+                        <!--For every row in the grid data construct...-->
+                        <template for:each={gridData} for:item="row" for:index="index">
+
+                            <tr key={row.index}>
+
+                                <td data-index={index} data-name="statusIcons" class="slds-cell-wrap slds-wrap" style='max-width:100px'>
+
+                                    <template if:true={row.editInProgress}>
+                                        <lightning-icon icon-name="utility:edit" variant="warning" size="small">
+                                        </lightning-icon><br />
+                                    </template>
+
+                                    <template if:true={row.clientSideWarningMessages}>
+                                        <lightning-icon icon-name="utility:warning" variant="warning" size="small">
+                                        </lightning-icon>
+                                        <span style="color:orange">
+                                            {row.clientSideWarningMessages}
+                                        </span><br />
+                                    </template>
+
+                                    <template if:true={row.isError}>
+                                        <lightning-icon icon-name="utility:warning" variant="error" size="small">
+                                        </lightning-icon>
+                                        <span style="color:rgba(159,33,22,1)">
+                                            {row.errorMessages}
+                                        </span><br />
+                                    </template>
+
+                                    <template if:true={row.saveSuccessful}>
+                                        <lightning-icon icon-name="action:approval" size="xx-small"></lightning-icon>
+                                    </template>
+
+                                </td>
+                                <!--</template>-->
+
+
+                                <td data-index={index} data-name="actions" style='max-width:80px'>
+                                    
+                                    <c-editable-grid-row-action-cell
+                                        index={index}
+                                        can-clone={row.canClone}
+                                        can-delete={row.canDelete}
+                                        onclone={cloneRecord}
+
+                                        ontoggledeleteprompt={toggleDeletePromptOnRecord}
+                                        show-delete-confirmation={row.showDeleteConfirmation}
+                                        ondelete={deleteRecord}>
+                                        
+                                    </c-editable-grid-row-action-cell>
+                                    
+                                </td>
+
+                                <!--Cells inside each row...-->
+                                <template for:each={row.cells} for:item="cell">
+
+                                    <td data-index={index} data-name={cell.fieldName} style={cell.style} key={cell.dataId}>
+
+                                        <!--Wrapper that shows either lightning-input, 
+                                                textarea, custom lookup, or computed formula-->
+
+                                        <c-editable-grid-cell-2 
+                                            
+                                            index={index}
+                                            field-name={cell.fieldName} 
+                                            type={cell.type} 
+
+                                            formatter={cell.formatter}
+                                            min={cell.min} 
+                                            max={cell.max}
+                                            step={cell.step}
+
+                                            picklist-values={cell.picklistValues}
+
+                                            lookup-object-name={cell.lookupObjectName} 
+                                            lookup-title-field={cell.lookupTitleField}
+                                            lookup-title={cell.lookupTitle}
+                                            lookup-subtitle-field={cell.lookupSubtitleField}
+                                            lookup-subtitle={cell.lookupSubtitle} 
+                                            lookup-icon-name={cell.lookupIconName}
+                                            lookup-additional-fields-to-query={cell.lookupAdditionalFieldsToQuery}
+                                            lookup-baseline-filter={cell.lookupBaselineFilter}
+
+                                            value={cell.value} 
+                                            can-update={cell.canUpdate} 
+                                            required={cell.required}
+                                            
+                                            onfieldchange={handleRecordFieldChange}
+
+                                            warning-message-conditions={cell.warningMessageConditions}>
+                                        </c-editable-grid-cell-2>
+
+                                    </td>
+
+                                </template>
+
+                                
+
+                            </tr>
+
+
+                        </template>
+
+                        <!--</div>-->
+
+
+                    </tbody>
+
+
+                </table>
+
+
+                <template if:true={serverTripInProgress}>
+                    <lightning-spinner variant="brand" size="large"></lightning-spinner>
+                </template>
+
+            </div>
+
+
+            <br />
+
+            <div class="slds-p-around_medium">
+
+
+                <div class="slds-grid slds-grid-wrap">
+
+                    <div class="slds-size_11-of-12">
+
+                        <div class="slds-clearfix">
+                            <div class="slds-float_left">
+
+                                <!--Create new row - would need to create both record and grid-row JSON-->
+                                <template if:true={config.canCreate}>
+                                    <lightning-button 
+                                        label="New Row" 
+                                        variant="brand" 
+                                        onclick={newRecordAndGridRow}
+                                        disabled={createButtonDisabled}></lightning-button>
+                                </template>
+
+                                <!--<lightning-button label="Show/Hide Full List" onclick={toggleScrollableWindowPreference}></lightning-button>-->
+
+                                &nbsp;&nbsp;&nbsp; {recordList.length} rows in list.
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <template if:true={gridHasExpandibleColumns}>
+
+                                    <lightning-button label="Show less columns" disabled={minExpansionIndexReached} onclick={collapseColumns}></lightning-button>
+                                    &nbsp;&nbsp;
+                                    
+                                    <lightning-button label="Show more columns" disabled={maxExpansionIndexReached} onclick={expandColumns}></lightning-button>
+                                    &nbsp;&nbsp;
+
+                                    <template if:true={showWarningRegardingHiddenColumns}>
+                                        <span style="color:orange">Hidden columns may have values.</span><br />
+                                    </template>
+
+                                </template>
+
+                            </div>
+
+                            <div class="slds-float_right">
+
+                                <template if:true={config.canSave}>
+
+                                    <template if:true={config.showSimpleWarningsAndErrors}>
+
+                                        <template if:true={unsavedCount}>
+                                            {unsavedCount} unsaved rows.</span><br />
+                                        </template>
+                                        <template if:true={simpleWarningMessage}>
+                                            <span style="color:orange">{simpleWarningMessage}</span><br />
+                                        </template>
+                                        <template if:true={simpleErrorMessage}>
+                                            <span style="color:rgb(194, 57, 52)">{simpleErrorMessage}</span><br />
+                                        </template>
+                                        
+                                    </template>
+
+                                    <template if:true={standardMessage}>
+                                        {standardMessage}<br />
+                                    </template>
+
+
+                                    <template if:false={config.showSimpleWarningsAndErrors}>
+
+                                        <!-- Pre save validation errors -->
+                                        <template if:true={preSaveValidationErrors.length}>
+                                            <section class="slds-popover slds-popover_warning slds-nubbin_right-top" role="dialog">
+                                                <header class="slds-popover__header">
+                                                    <div class="slds-media slds-media_center slds-has-flexi-truncate ">
+                                                        <div class="slds-media__figure">
+                                                            <span class="slds-icon_container slds-icon-utility-error">
+                                                            <lightning-icon icon-name="utility:warning"></lightning-icon>
+                                                            </span>
+                                                        </div>
+                                                        <div class="slds-media__body">
+                                                            <h2 class="slds-truncate slds-text-heading_medium" title="Resolve error">Before you can save...</h2>
+                                                        </div>
+                                                    </div>
+                                                </header>
+                                                <div class="slds-popover__body">
+                                                    <!--Please correct the following:<br/>-->
+                                                    <template for:each={preSaveValidationErrors} for:item="error">
+                                                        - {error}<br key={error}/>
+                                                    </template>
+                    
+                                                </div>
+                                            </section>
+                                            
+                                        </template>
+
+                                        <!--Currently jury-rinked to show unsaved change message-->
+                                        <template if:false={preSaveValidationErrors.length}>
+                                            <template if:true={simpleWarningMessage}>
+                                                <section class="slds-popover slds-popover_warning slds-nubbin_right-top" role="dialog">
+                                                    <header class="slds-popover__header">
+                                                        <div class="slds-media slds-media_center slds-has-flexi-truncate ">
+                                                            <!--<div class="slds-media__figure">
+                                                                <span class="slds-icon_container slds-icon-utility-error">
+                                                                <lightning-icon icon-name="utility:warning"></lightning-icon>
+                                                                </span>
+                                                            </div>-->
+                                                            <div class="slds-media__body">
+                                                                <h2 class="slds-truncate slds-text-heading_medium" title="Resolve error">Please Save before exiting.</h2>
+                                                            </div>
+                                                        </div>
+                                                    </header>
+                                                </section>
+
+                                            </template>
+                                            
+                                        </template>
+
+                                        <!--Server Error Message-->
+                                        <template if:true={popoverErrorMessage}>
+
+                                            <section class="slds-popover slds-popover_error slds-nubbin_right-top" role="dialog">
+                                                <header class="slds-popover__header">
+                                                    <div class="slds-media slds-media_center slds-has-flexi-truncate ">
+                                                        <div class="slds-media__figure">
+                                                            <span class="slds-icon_container slds-icon-utility-error">
+                                                            <lightning-icon icon-name="utility:error" variant="inverse"></lightning-icon>
+                                                            </span>
+                                                        </div>
+                                                        <div class="slds-media__body">
+                                                            <h2 class="slds-truncate slds-text-heading_medium" title="Resolve error">Save failed.</h2>
+                                                        </div>
+                                                    </div>
+                                                </header>
+                                                <div class="slds-popover__body">
+                                                    <p>{popoverErrorMessage}</p>
+                                                </div>
+                                            </section>
+
+                                        </template>
+                                    
+                                    </template>
+
+                                </template>
+
+                                <template if:false={config.canSave}>
+                                    {config.messageWhenLockedFromSaving}
+                                </template>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slds-size_1-of-12 slds-p-left_small">
+
+                        <template if:true={config.canSave}>
+
+                            <lightning-button label="Save" variant="brand" onclick={save} disabled={saveButtonDisabled}>
+                            </lightning-button>
+
+                        </template>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </article>
+
+    </template>
+
+</template>

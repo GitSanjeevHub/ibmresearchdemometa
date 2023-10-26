@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>HERDC Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cat 1</fullName>
+                <default>false</default>
+                <label>Cat 1</label>
+            </value>
+            <value>
+                <fullName>Cat 2</fullName>
+                <default>false</default>
+                <label>Cat 2</label>
+            </value>
+            <value>
+                <fullName>Cat 3</fullName>
+                <default>false</default>
+                <label>Cat 3</label>
+            </value>
+            <value>
+                <fullName>Cat 4</fullName>
+                <default>false</default>
+                <label>Cat 4</label>
+            </value>
+            <value>
+                <fullName>Non-HERDC consulting</fullName>
+                <default>false</default>
+                <label>Non-HERDC consulting</label>
+            </value>
+            <value>
+                <fullName>Non-HERDC Research</fullName>
+                <default>false</default>
+                <label>Non-HERDC Research</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

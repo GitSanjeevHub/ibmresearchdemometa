@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowSettings xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <enableFlowBREncodedFixEnabled>true</enableFlowBREncodedFixEnabled>
+    <enableFlowDeployAsActiveEnabled>false</enableFlowDeployAsActiveEnabled>
+    <enableFlowFieldFilterEnabled>true</enableFlowFieldFilterEnabled>
+    <enableFlowFormulasFixEnabled>true</enableFlowFormulasFixEnabled>
+    <enableFlowInterviewSharingEnabled>true</enableFlowInterviewSharingEnabled>
+    <enableFlowNullPreviousValueFix>false</enableFlowNullPreviousValueFix>
+    <enableFlowPauseEnabled>false</enableFlowPauseEnabled>
+    <enableFlowUseApexExceptionEmail>false</enableFlowUseApexExceptionEmail>
+    <enableLightningRuntimeEnabled>true</enableLightningRuntimeEnabled>
+    <isAccessToInvokedApexRequired xsi:nil="true"/>
+    <isEnhancedFlowListViewVisible>true</isEnhancedFlowListViewVisible>
+    <isFlowApexContextRetired xsi:nil="true"/>
+    <isManageFlowRequiredForAutomationCharts>false</isManageFlowRequiredForAutomationCharts>
+</FlowSettings>

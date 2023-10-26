@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currency_should_not_be_negative</fullName>
+    <active>true</active>
+    <description>Amount Values should not be negative</description>
+    <errorConditionFormula>(Amount_Requested__c &lt; 0  ||  Awarded_Amount__c  &lt; 0)</errorConditionFormula>
+    <errorMessage>Currency should not be negative</errorMessage>
+</ValidationRule>

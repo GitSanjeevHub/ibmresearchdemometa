@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Live_Performance_Creative_Work_Type__c</name>
+    <picklistValues>
+        <masterLabel>Dance (live performance)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music (live performance)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other live performance of creative work</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Play (live performance)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

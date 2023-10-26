@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_limit_for_institutions__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Limitation of proposals under funding body rules or requirement for one tender proposal representing My Uni&apos;s broad expertise</inlineHelpText>
+    <label>Application limit for My Uni</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_For_Not_Progressing__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason For Not Progressing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pitch session feedback</fullName>
+                <default>false</default>
+                <label>Pitch session feedback</label>
+            </value>
+            <value>
+                <fullName>Review panel feedback</fullName>
+                <default>false</default>
+                <label>Review panel feedback</label>
+            </value>
+            <value>
+                <fullName>Ineligible</fullName>
+                <default>false</default>
+                <label>Ineligible</label>
+            </value>
+            <value>
+                <fullName>School support not available</fullName>
+                <default>false</default>
+                <label>School support not available</label>
+            </value>
+            <value>
+                <fullName>Embargoed organisation</fullName>
+                <default>false</default>
+                <label>Embargoed organisation</label>
+            </value>
+            <value>
+                <fullName>Did not proceed</fullName>
+                <default>false</default>
+                <label>Did not proceed</label>
+            </value>
+            <value>
+                <fullName>Capped grant applications</fullName>
+                <default>false</default>
+                <label>Capped grant applications</label>
+            </value>
+            <value>
+                <fullName>Not Awarded</fullName>
+                <default>false</default>
+                <label>Not Awarded</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

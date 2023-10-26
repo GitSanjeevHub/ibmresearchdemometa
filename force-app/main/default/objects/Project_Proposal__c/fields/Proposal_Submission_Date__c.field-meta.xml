@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposal_Submission_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The date the proposal was submitted to the Funder (if already submitted).</inlineHelpText>
+    <label>Date Proposal Submitted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

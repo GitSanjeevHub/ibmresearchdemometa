@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ethics Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ethics Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Ethics Request: Animal Ethics New Application</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Reporting</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Review and Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Time to Decision</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

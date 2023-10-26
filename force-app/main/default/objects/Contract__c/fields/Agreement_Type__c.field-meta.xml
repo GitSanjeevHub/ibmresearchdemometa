@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Agreement Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clinical Trial Site Agreement</fullName>
+                <default>false</default>
+                <label>Clinical Trial Site Agreement</label>
+            </value>
+            <value>
+                <fullName>Confidentiality Deed/NDA</fullName>
+                <default>false</default>
+                <label>Confidentiality Deed/NDA</label>
+            </value>
+            <value>
+                <fullName>Consulting Services Agreement (Non-Research)</fullName>
+                <default>false</default>
+                <label>Consulting Services Agreement (Non-Research)</label>
+            </value>
+            <value>
+                <fullName>Contractors Agreement (services to My_Uni)</fullName>
+                <default>false</default>
+                <label>Contractors Agreement (services to My_Uni)</label>
+            </value>
+            <value>
+                <fullName>Grant Funding Agreement</fullName>
+                <default>false</default>
+                <label>Grant Funding Agreement</label>
+            </value>
+            <value>
+                <fullName>Honorary/Adjunct/Visitors Deed</fullName>
+                <default>false</default>
+                <label>Honorary/Adjunct/Visitors Deed</label>
+            </value>
+            <value>
+                <fullName>Hospital/Health Services Agreement</fullName>
+                <default>false</default>
+                <label>Hospital/Health Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Industry PhD Agreement</fullName>
+                <default>false</default>
+                <label>Industry PhD Agreement</label>
+            </value>
+            <value>
+                <fullName>Intellectual Property Assignment Deed</fullName>
+                <default>false</default>
+                <label>Intellectual Property Assignment Deed</label>
+            </value>
+            <value>
+                <fullName>Licence Agreement (supplying)</fullName>
+                <default>false</default>
+                <label>Licence Agreement (supplying)</label>
+            </value>
+            <value>
+                <fullName>Licence Agreement (receiving)</fullName>
+                <default>false</default>
+                <label>Licence Agreement (receiving)</label>
+            </value>
+            <value>
+                <fullName>Master Services Agreement</fullName>
+                <default>false</default>
+                <label>Master Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Material/Data Transfer Agreement (receiving)</fullName>
+                <default>false</default>
+                <label>Material/Data Transfer Agreement (receiving)</label>
+            </value>
+            <value>
+                <fullName>Material/Data Transfer Agreement (supplying)</fullName>
+                <default>false</default>
+                <label>Material/Data Transfer Agreement (supplying)</label>
+            </value>
+            <value>
+                <fullName>Memorandum of Understanding (MOU)</fullName>
+                <default>false</default>
+                <label>Memorandum of Understanding (MOU)</label>
+            </value>
+            <value>
+                <fullName>Multi-Institutional Agreement (MIA)</fullName>
+                <default>false</default>
+                <label>Multi-Institutional Agreement (MIA)</label>
+            </value>
+            <value>
+                <fullName>Novation Deed</fullName>
+                <default>false</default>
+                <label>Novation Deed</label>
+            </value>
+            <value>
+                <fullName>Partnership/Participation Agreement</fullName>
+                <default>false</default>
+                <label>Partnership/Participation Agreement</label>
+            </value>
+            <value>
+                <fullName>Research Collaboration Agreement</fullName>
+                <default>false</default>
+                <label>Research Collaboration Agreement</label>
+            </value>
+            <value>
+                <fullName>Research Consulting Services Agreement</fullName>
+                <default>false</default>
+                <label>Research Consulting Services Agreement</label>
+            </value>
+            <value>
+                <fullName>Scholarship Agreement</fullName>
+                <default>false</default>
+                <label>Scholarship Agreement</label>
+            </value>
+            <value>
+                <fullName>Start-up / Spin-out Related Agreement</fullName>
+                <default>false</default>
+                <label>Start-up / Spin-out Related Agreement</label>
+            </value>
+            <value>
+                <fullName>Student Researcher Deed</fullName>
+                <default>false</default>
+                <label>Student Researcher Deed</label>
+            </value>
+            <value>
+                <fullName>Subcontract</fullName>
+                <default>false</default>
+                <label>Subcontract</label>
+            </value>
+            <value>
+                <fullName>Variation / Termination Deed/Agreement</fullName>
+                <default>false</default>
+                <label>Variation / Termination Deed/Agreement</label>
+            </value>
+            <value>
+                <fullName>Volunteer Deed</fullName>
+                <default>false</default>
+                <label>Volunteer Deed</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

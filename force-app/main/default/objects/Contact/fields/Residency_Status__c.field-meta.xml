@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Residency_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Residency / Citizenship Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Australian Citizen</fullName>
+                <default>false</default>
+                <label>Australian Citizen</label>
+            </value>
+            <value>
+                <fullName>New Zealand Citizen</fullName>
+                <default>false</default>
+                <label>New Zealand Citizen</label>
+            </value>
+            <value>
+                <fullName>Permanent resident of Australia</fullName>
+                <default>false</default>
+                <label>Permanent resident of Australia</label>
+            </value>
+            <value>
+                <fullName>Permanent Humanitarian Visa Holder</fullName>
+                <default>false</default>
+                <label>Permanent Humanitarian Visa Holder</label>
+            </value>
+            <value>
+                <fullName>International Student or temporary entry visa holder</fullName>
+                <default>false</default>
+                <label>International Student or temporary entry visa holder</label>
+            </value>
+            <value>
+                <fullName>Overseas Student Residing Overseas</fullName>
+                <default>false</default>
+                <label>Overseas Student Residing Overseas</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>AEC_Ethics_Application_Type__c</name>
+    <picklistValues>
+        <masterLabel>Improvement of animal management or production</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maintenance and improvement of human or animal health and welfare</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obtain &amp; establish significant information relevant to the understanding, maintenance or improvement of the natural environment.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The achievement of educational objectives</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>The understanding of human or animal biology</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

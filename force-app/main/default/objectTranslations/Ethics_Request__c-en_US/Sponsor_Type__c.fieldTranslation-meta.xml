@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Sponsor_Type__c</name>
+    <picklistValues>
+        <masterLabel>Commercial/Industry Sponsored projects</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Projects Sponsored by My Uni</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Projects Sponsored by another organisation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

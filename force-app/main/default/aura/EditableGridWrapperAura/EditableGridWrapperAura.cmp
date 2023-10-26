@@ -1,0 +1,42 @@
+<aura:component implements="force:appHostable,lightning:isUrlAddressable,flexipage:availableForAllPageTypes,lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,lightning:availableForFlowScreens" 
+access="global" >
+    
+    <aura:attribute name="configFile" 
+                    type="String" 
+                    description="Name of static resource that stores config settings"
+                    />
+    <aura:attribute name="config" type="Map"/>
+    <!--Soon to deprecate these fields-->
+    <aura:attribute name="objectName" type="String" description="Object to display. This is different from sObjectType"/>
+    <aura:attribute name="recordTypeName" type="String"/>
+
+    <aura:attribute name="recalculateRecordListWhenHostRecordChanges" type="boolean" default="false"/>
+    <aura:attribute name="acceptRefreshRecordAppEvents" type="boolean" default="true"/>
+    <aura:attribute name="hideUI" type="boolean"/>
+
+    <aura:registerEvent name="successfulSave" type="c:EditableGridSuccessfulSave"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:BudgetChargeOutRateScreenComplete" action="{!c.refreshRecordsFromServer}"/>
+    
+    <!--<aura:method name="recalculateRecords" action="{!c.recalculateRecords}"/>-->
+
+    <aura:html tag="style">
+        .slds-modal__container{
+        max-width: 95rem !important;
+        width:95% !important;
+        }
+    </aura:html>
+
+    <aura:if isTrue="{!v.config}">
+    <c:editableGridWrapper 
+        aura:id="grid"
+        recordId="{!v.recordId}"
+        configApi="{!v.config}"
+        onsuccessfulsave="{!c.handleSuccessfulSave}"
+        hideUI="{!v.hideUI}"
+        recalculateRecordListWhenHostRecordChanges="{!v.recalculateRecordListWhenHostRecordChanges}"
+    />
+    </aura:if>  
+
+</aura:component>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Project_Proposal__c.Account_Organisation__c</field>
+    </columns>
+    <columns>
+        <field>Project_Proposal__c.Lead_Chief_Investigator__c</field>
+    </columns>
+    <columns>
+        <field>Project_Proposal__c.Submission_Date__c</field>
+    </columns>
+    <columns>
+        <field>Project_Proposal__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Project_Proposal__c.First_Approver__c</field>
+    </columns>
+    <currency>AUD</currency>
+    <description>Proposals that are under review by the research office, JCU Research office reviews the eligibility of the project team to apply for this funding opportunity based on the scheme-specific criterion before the proposal is submitted for internal approval.</description>
+    <filter>
+        <criteriaItems>
+            <column>Project_Proposal__c.Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Approvals</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Review by Research Office</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Project_Proposal__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project_Proposal__c.AEC_Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

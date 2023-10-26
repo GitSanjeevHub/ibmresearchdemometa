@@ -1,0 +1,7 @@
+A grant application has been submitted for your approval.
+
+Title: {!Project_Proposal__c.Name}
+Account/Organisation: {!Project_Proposal__c.I_RS_Account_Organisation__c}
+Amount Requested: {!Project_Proposal__c.Amount_Requested__c}
+Awarded Amount: {!Project_Proposal__c.Awarded_Amount__c}
+{!LEFT(Project_Proposal__c.I_RS_Portal_Record_URL__c, LEN(Project_Proposal__c.I_RS_Portal_Record_URL__c)-15) & RIGHT(ApprovalRequest.External_URL, 15)}

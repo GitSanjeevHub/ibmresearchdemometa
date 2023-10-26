@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant</fullName>
+    <active>true</active>
+    <label>Grant</label>
+    <picklistValues>
+        <picklist>Closure_Reason__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relinquished</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred Out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyPub Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dismissal_Reason__c</picklist>
+        <values>
+            <fullName>Not eligible to apply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other commitments prevent meeting time line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research not in scope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workload</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Display_on_Researcher_Profile_Reason__c</picklist>
+        <values>
+            <fullName>Client requested confidentiality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researcher requested confidentiality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under embargo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Display_on_Researcher_Profile__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Specified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not permitted by funding agreement %28RO only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permitted by funding agreement %28RO only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FTE_at_My_Uni__c</picklist>
+        <values>
+            <fullName>10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IP_Position__c</picklist>
+        <values>
+            <fullName>Jointly owned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owned by My Uni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owned by other organisation %E2%80%93 no rights to My Uni to use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owned by other organisation with rights for My Uni to use for research and teaching</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Left_Over_Funds_Treatment__c</picklist>
+        <values>
+            <fullName>Returned to client%2Ffunding body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred to nominated account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferred to outside earnings account</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Peer_Review_Status__c</picklist>
+        <values>
+            <fullName>Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback provided to applicant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material provided</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With reviewer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pitch_Status__c</picklist>
+        <values>
+            <fullName>Completed %E2%80%93 Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed %E2%80%93 Recommend not progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Completed - Late entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Completed-Late entrant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Proposal_to_be_Submitted_By__c</picklist>
+        <values>
+            <fullName>Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Researcher</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Sub_type__c</picklist>
+        <values>
+            <fullName>Commercialisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Research Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Collaboration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Grant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quote%2FProposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tender%2FRFQ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Publishing_Rights__c</picklist>
+        <values>
+            <fullName>No Rights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>With Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Without Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_For_Not_Progressing__c</picklist>
+        <values>
+            <fullName>Capped grant applications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Did not proceed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embargoed organisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Awarded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitch session feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review panel feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School support not available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawn</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_of_Opportunity__c</picklist>
+        <values>
+            <fullName>Alumni and Advancement Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approach by Industry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduate Research School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industry Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicly available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Professional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status_New__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approvals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Create Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drafting NOI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Establish Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formalise Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HoS NOI Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panel Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer review draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer review draft complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitch Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PlaceHolder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provide Project Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejoinders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review by Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission to Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submission to Funding Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submit to Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Successful</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsuccessful</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approvals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Ready for Submission to Funding Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review by Research Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Successful</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>System_Field_Approval_Toggle__c</picklist>
+        <values>
+            <fullName>One</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Theme__c</picklist>
+        <values>
+            <fullName>Industries and economies in the tropics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>People and societies in the tropics%2C and</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tropical ecosystems%2C conservation and climate change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tropical health%2C medicine and biosecurity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

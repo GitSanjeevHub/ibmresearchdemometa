@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>IP_Position__c</name>
+    <picklistValues>
+        <masterLabel>Jointly owned</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owned by My Uni</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owned by other organisation with rights for My Uni to use for research and teaching</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owned by other organisation – no rights to My Uni to use</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

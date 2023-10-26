@@ -1,0 +1,53 @@
+<template>
+
+        <template if:true={canClone}>
+
+            <template if:false={showDeleteConfirmation}>
+
+                <lightning-icon 
+                    title="Clone"
+                    icon-name="utility:copy" 
+                    size="small" 
+                    variant="success" 
+                    onclick={handleClone}>
+                </lightning-icon>
+
+            </template>
+
+        </template>
+    
+        <template if:true={canDelete}>
+            <template if:false={showDeleteConfirmation}>
+
+                <lightning-icon 
+                    title="Delete"
+                    icon-name="utility:delete" 
+                    size="small" 
+                    onclick={promptForDelete}>
+                </lightning-icon>
+
+            </template>
+
+            <template if:true={showDeleteConfirmation}>
+
+                Delete?&nbsp;&nbsp;<br/>
+
+                <lightning-icon 
+                    title="Cancel Delete"
+                    icon-name="utility:close" 
+                    size="small"
+                    onclick={cancelDelete}>
+                </lightning-icon>
+
+                <lightning-icon 
+                    title="Confirm Delete"
+                    icon-name="utility:check"
+                    size="small"
+                    variant="error"
+                    onclick={handleDelete}>
+                </lightning-icon>
+
+            </template>
+        </template>
+
+</template>

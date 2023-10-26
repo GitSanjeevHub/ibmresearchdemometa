@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_RS_Line_Item_Permission_Delete__c</fullName>
+    <externalId>false</externalId>
+    <formula>/*For Researchers, only Drafts can be deleted*/
+(
+TEXT(Status__c) = &apos;Draft&apos; &amp;&amp;
+$User.Is_Researcher_User__c = &apos;1&apos;
+)
+
+||
+
+/*Non-researchers have full access*/
+$User.Is_Researcher_User__c = &apos;0&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Line Item Permission - Delete</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

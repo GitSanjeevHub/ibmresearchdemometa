@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>Display_on_Researcher_Profile_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Client requested confidentiality</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Researcher requested confidentiality</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under embargo</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

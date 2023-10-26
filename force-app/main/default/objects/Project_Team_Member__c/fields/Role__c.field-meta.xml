@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lead Chief Investigator</fullName>
+                <default>false</default>
+                <label>Lead Chief Investigator</label>
+            </value>
+            <value>
+                <fullName>Chief Investigator</fullName>
+                <default>false</default>
+                <label>Chief Investigator</label>
+            </value>
+            <value>
+                <fullName>Partner Researcher</fullName>
+                <default>false</default>
+                <label>Partner Researcher</label>
+            </value>
+            <value>
+                <fullName>Overall Lead Chief Investigator</fullName>
+                <default>false</default>
+                <label>Overall Lead Chief Investigator</label>
+            </value>
+            <value>
+                <fullName>External Researcher</fullName>
+                <default>false</default>
+                <label>External Researcher</label>
+            </value>
+            <value>
+                <fullName>Research Assistant</fullName>
+                <default>false</default>
+                <label>Research Assistant</label>
+            </value>
+            <value>
+                <fullName>Graduate Researcher</fullName>
+                <default>false</default>
+                <label>Graduate Researcher</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+            <value>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+                <label>Administrator</label>
+            </value>
+            <value>
+                <fullName>Student or Graduate Researcher Supervisor</fullName>
+                <default>false</default>
+                <label>Student or Graduate Researcher Supervisor</label>
+            </value>
+            <value>
+                <fullName>Approver</fullName>
+                <default>false</default>
+                <label>Approver</label>
+            </value>
+            <value>
+                <fullName>Research Centre Member</fullName>
+                <default>false</default>
+                <label>Research Centre Member</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

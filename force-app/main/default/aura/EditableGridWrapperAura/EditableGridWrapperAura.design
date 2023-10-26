@@ -1,0 +1,8 @@
+<design:component>
+
+	<design:attribute name="configFile" description="Name of static resource that stores config settings"/>
+	<design:attribute name="objectName" label="Object Name (Deprecated)" />
+	<design:attribute name="recordTypeName" label="Record Type Name (Deprecated)" />
+	<design:attribute name="recordId" label="Parent Record Id Reference"/>
+
+</design:component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recorded_or_Rendered_Work_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Recorded or Rendered Work Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Film, video</fullName>
+                <default>false</default>
+                <label>Film, video</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>Inter-arts</fullName>
+                <default>false</default>
+                <label>Inter-arts</label>
+            </value>
+            <value>
+                <fullName>Digital creative work</fullName>
+                <default>false</default>
+                <label>Digital creative work</label>
+            </value>
+            <value>
+                <fullName>Website/web exhibition</fullName>
+                <default>false</default>
+                <label>Website/web exhibition</label>
+            </value>
+            <value>
+                <fullName>Other recorded/rendered creative work</fullName>
+                <default>false</default>
+                <label>Other recorded/rendered creative work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

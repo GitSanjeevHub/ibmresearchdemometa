@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Budget_Collaborator</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget Collaborator</shortDescription>
+        <value>https://ibmresearchdemo--c.vf.force.com/resource/1666656551000/Collaborator?</value>
+    </labels>
+    <labels>
+        <fullName>Budget_Non_Salary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget Non Salary</shortDescription>
+        <value>https://ibmresearchdemo--c.vf.force.com/resource/1666656316000/NonSalary?</value>
+    </labels>
+    <labels>
+        <fullName>Budget_Salary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget Salary</shortDescription>
+        <value>https://ibmresearchdemo--c.vf.force.com/resource/1667538834000/Salary</value>
+    </labels>
+</CustomLabels>

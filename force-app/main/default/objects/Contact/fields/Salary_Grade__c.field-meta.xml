@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salary_Grade__c</fullName>
+    <externalId>false</externalId>
+    <label>Salary Grade (HR)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Level A 1</fullName>
+                <default>false</default>
+                <label>Level A 1</label>
+            </value>
+            <value>
+                <fullName>Level A 2</fullName>
+                <default>false</default>
+                <label>Level A 2</label>
+            </value>
+            <value>
+                <fullName>Level A 3</fullName>
+                <default>false</default>
+                <label>Level A 3</label>
+            </value>
+            <value>
+                <fullName>Level A 4</fullName>
+                <default>false</default>
+                <label>Level A 4</label>
+            </value>
+            <value>
+                <fullName>Level A 5</fullName>
+                <default>false</default>
+                <label>Level A 5</label>
+            </value>
+            <value>
+                <fullName>Level A 6</fullName>
+                <default>false</default>
+                <label>Level A 6</label>
+            </value>
+            <value>
+                <fullName>Level A 7</fullName>
+                <default>false</default>
+                <label>Level A 7</label>
+            </value>
+            <value>
+                <fullName>Level A 8</fullName>
+                <default>false</default>
+                <label>Level A 8</label>
+            </value>
+            <value>
+                <fullName>Level B 1</fullName>
+                <default>false</default>
+                <label>Level B 1</label>
+            </value>
+            <value>
+                <fullName>Level B 2</fullName>
+                <default>false</default>
+                <label>Level B 2</label>
+            </value>
+            <value>
+                <fullName>Level B 3</fullName>
+                <default>false</default>
+                <label>Level B 3</label>
+            </value>
+            <value>
+                <fullName>Level B 4</fullName>
+                <default>false</default>
+                <label>Level B 4</label>
+            </value>
+            <value>
+                <fullName>Level B 5</fullName>
+                <default>false</default>
+                <label>Level B 5</label>
+            </value>
+            <value>
+                <fullName>Level B 6</fullName>
+                <default>false</default>
+                <label>Level B 6</label>
+            </value>
+            <value>
+                <fullName>Level C 1</fullName>
+                <default>false</default>
+                <label>Level C 1</label>
+            </value>
+            <value>
+                <fullName>Level C 2</fullName>
+                <default>false</default>
+                <label>Level C 2</label>
+            </value>
+            <value>
+                <fullName>Level C 3</fullName>
+                <default>false</default>
+                <label>Level C 3</label>
+            </value>
+            <value>
+                <fullName>Level C 4</fullName>
+                <default>false</default>
+                <label>Level C 4</label>
+            </value>
+            <value>
+                <fullName>Level C 5</fullName>
+                <default>false</default>
+                <label>Level C 5</label>
+            </value>
+            <value>
+                <fullName>Level C 6</fullName>
+                <default>false</default>
+                <label>Level C 6</label>
+            </value>
+            <value>
+                <fullName>Level D 1</fullName>
+                <default>false</default>
+                <label>Level D 1</label>
+            </value>
+            <value>
+                <fullName>Level D 2</fullName>
+                <default>false</default>
+                <label>Level D 2</label>
+            </value>
+            <value>
+                <fullName>Level D 3</fullName>
+                <default>false</default>
+                <label>Level D 3</label>
+            </value>
+            <value>
+                <fullName>Level D 4</fullName>
+                <default>false</default>
+                <label>Level D 4</label>
+            </value>
+            <value>
+                <fullName>Level E 1</fullName>
+                <default>false</default>
+                <label>Level E 1</label>
+            </value>
+            <value>
+                <fullName>HEO1-1</fullName>
+                <default>false</default>
+                <label>HEO1-1</label>
+            </value>
+            <value>
+                <fullName>HEO1-2</fullName>
+                <default>false</default>
+                <label>HEO1-2</label>
+            </value>
+            <value>
+                <fullName>HEO1-3</fullName>
+                <default>false</default>
+                <label>HEO1-3</label>
+            </value>
+            <value>
+                <fullName>HEO1-4</fullName>
+                <default>false</default>
+                <label>HEO1-4</label>
+            </value>
+            <value>
+                <fullName>HEO2-1</fullName>
+                <default>false</default>
+                <label>HEO2-1</label>
+            </value>
+            <value>
+                <fullName>HEO2-2</fullName>
+                <default>false</default>
+                <label>HEO2-2</label>
+            </value>
+            <value>
+                <fullName>HEO2-3</fullName>
+                <default>false</default>
+                <label>HEO2-3</label>
+            </value>
+            <value>
+                <fullName>HEO3-1</fullName>
+                <default>false</default>
+                <label>HEO3-1</label>
+            </value>
+            <value>
+                <fullName>HEO3-2</fullName>
+                <default>false</default>
+                <label>HEO3-2</label>
+            </value>
+            <value>
+                <fullName>HEO3-3</fullName>
+                <default>false</default>
+                <label>HEO3-3</label>
+            </value>
+            <value>
+                <fullName>HEO3-4</fullName>
+                <default>false</default>
+                <label>HEO3-4</label>
+            </value>
+            <value>
+                <fullName>HEO3-5</fullName>
+                <default>false</default>
+                <label>HEO3-5</label>
+            </value>
+            <value>
+                <fullName>HEO3-6</fullName>
+                <default>false</default>
+                <label>HEO3-6</label>
+            </value>
+            <value>
+                <fullName>HEO3-7</fullName>
+                <default>false</default>
+                <label>HEO3-7</label>
+            </value>
+            <value>
+                <fullName>HEO4-1</fullName>
+                <default>false</default>
+                <label>HEO4-1</label>
+            </value>
+            <value>
+                <fullName>HEO4-2</fullName>
+                <default>false</default>
+                <label>HEO4-2</label>
+            </value>
+            <value>
+                <fullName>HEO4-3</fullName>
+                <default>false</default>
+                <label>HEO4-3</label>
+            </value>
+            <value>
+                <fullName>HEO4-4</fullName>
+                <default>false</default>
+                <label>HEO4-4</label>
+            </value>
+            <value>
+                <fullName>HEO5-1</fullName>
+                <default>false</default>
+                <label>HEO5-1</label>
+            </value>
+            <value>
+                <fullName>HEO5-2</fullName>
+                <default>false</default>
+                <label>HEO5-2</label>
+            </value>
+            <value>
+                <fullName>HEO5-3</fullName>
+                <default>false</default>
+                <label>HEO5-3</label>
+            </value>
+            <value>
+                <fullName>HEO5-4</fullName>
+                <default>false</default>
+                <label>HEO5-4</label>
+            </value>
+            <value>
+                <fullName>HEO5-5</fullName>
+                <default>false</default>
+                <label>HEO5-5</label>
+            </value>
+            <value>
+                <fullName>HEO5-6</fullName>
+                <default>false</default>
+                <label>HEO5-6</label>
+            </value>
+            <value>
+                <fullName>HEO5-7</fullName>
+                <default>false</default>
+                <label>HEO5-7</label>
+            </value>
+            <value>
+                <fullName>HEO6-1</fullName>
+                <default>false</default>
+                <label>HEO6-1</label>
+            </value>
+            <value>
+                <fullName>HEO6-2</fullName>
+                <default>false</default>
+                <label>HEO6-2</label>
+            </value>
+            <value>
+                <fullName>HEO6-3</fullName>
+                <default>false</default>
+                <label>HEO6-3</label>
+            </value>
+            <value>
+                <fullName>HEO6-4</fullName>
+                <default>false</default>
+                <label>HEO6-4</label>
+            </value>
+            <value>
+                <fullName>HEO6-5</fullName>
+                <default>false</default>
+                <label>HEO6-5</label>
+            </value>
+            <value>
+                <fullName>HEO7-1</fullName>
+                <default>false</default>
+                <label>HEO7-1</label>
+            </value>
+            <value>
+                <fullName>HEO7-2</fullName>
+                <default>false</default>
+                <label>HEO7-2</label>
+            </value>
+            <value>
+                <fullName>HEO7-3</fullName>
+                <default>false</default>
+                <label>HEO7-3</label>
+            </value>
+            <value>
+                <fullName>HEO7-4</fullName>
+                <default>false</default>
+                <label>HEO7-4</label>
+            </value>
+            <value>
+                <fullName>HEO7-5</fullName>
+                <default>false</default>
+                <label>HEO7-5</label>
+            </value>
+            <value>
+                <fullName>HEO7-6</fullName>
+                <default>false</default>
+                <label>HEO7-6</label>
+            </value>
+            <value>
+                <fullName>HEO8-1</fullName>
+                <default>false</default>
+                <label>HEO8-1</label>
+            </value>
+            <value>
+                <fullName>HEO8-2</fullName>
+                <default>false</default>
+                <label>HEO8-2</label>
+            </value>
+            <value>
+                <fullName>HEO8-3</fullName>
+                <default>false</default>
+                <label>HEO8-3</label>
+            </value>
+            <value>
+                <fullName>HEO8-4</fullName>
+                <default>false</default>
+                <label>HEO8-4</label>
+            </value>
+            <value>
+                <fullName>HEO8-5</fullName>
+                <default>false</default>
+                <label>HEO8-5</label>
+            </value>
+            <value>
+                <fullName>HEO8-6</fullName>
+                <default>false</default>
+                <label>HEO8-6</label>
+            </value>
+            <value>
+                <fullName>HEO8-7</fullName>
+                <default>false</default>
+                <label>HEO8-7</label>
+            </value>
+            <value>
+                <fullName>HEO8-8</fullName>
+                <default>false</default>
+                <label>HEO8-8</label>
+            </value>
+            <value>
+                <fullName>HEO9-1</fullName>
+                <default>false</default>
+                <label>HEO9-1</label>
+            </value>
+            <value>
+                <fullName>HEO9-2</fullName>
+                <default>false</default>
+                <label>HEO9-2</label>
+            </value>
+            <value>
+                <fullName>HEO9-3</fullName>
+                <default>false</default>
+                <label>HEO9-3</label>
+            </value>
+            <value>
+                <fullName>HEO9-4</fullName>
+                <default>false</default>
+                <label>HEO9-4</label>
+            </value>
+            <value>
+                <fullName>HEO10-1</fullName>
+                <default>false</default>
+                <label>HEO10-1</label>
+            </value>
+            <value>
+                <fullName>Acad other casual</fullName>
+                <default>false</default>
+                <label>Acad other casual</label>
+            </value>
+            <value>
+                <fullName>Acad other casual (PhD)</fullName>
+                <default>false</default>
+                <label>Acad other casual (PhD)</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 1</fullName>
+                <default>false</default>
+                <label>Casual HEO 1</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 2</fullName>
+                <default>false</default>
+                <label>Casual HEO 2</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 3</fullName>
+                <default>false</default>
+                <label>Casual HEO 3</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 4</fullName>
+                <default>false</default>
+                <label>Casual HEO 4</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 5</fullName>
+                <default>false</default>
+                <label>Casual HEO 5</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 6</fullName>
+                <default>false</default>
+                <label>Casual HEO 6</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 7</fullName>
+                <default>false</default>
+                <label>Casual HEO 7</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 8</fullName>
+                <default>false</default>
+                <label>Casual HEO 8</label>
+            </value>
+            <value>
+                <fullName>Casual HEO 9</fullName>
+                <default>false</default>
+                <label>Casual HEO 9</label>
+            </value>
+            <value>
+                <fullName>Stipend</fullName>
+                <default>false</default>
+                <label>Stipend</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

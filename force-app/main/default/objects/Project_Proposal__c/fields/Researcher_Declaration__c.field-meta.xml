@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Researcher_Declaration__c</fullName>
+    <defaultValue>&quot;I, certify to the best of my knowledge that: &quot; &amp; br() &amp;
+&quot;- All details in the attached proposal are true and correct and comply with relevant guidelines; &quot;&amp; br() &amp;
+&quot;- If this proposal is successful, I will comply with the Australian Code for the Responsible Conduct of Research and agree that relevant University ethics, risk assessment and research contract procedures will be completed before this project commences. &quot;&amp; br() &amp;
+&quot;- There is no conflict of interest in this proposal; &quot;&amp; br() &amp;
+&quot;- All named team members agree to this proposal; &quot;&amp; br() &amp;
+&quot;- All required documentation has been provided for approval. &quot;&amp; br()</defaultValue>
+    <externalId>false</externalId>
+    <label>Researcher Declaration</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

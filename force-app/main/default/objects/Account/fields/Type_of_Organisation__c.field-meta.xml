@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Organisation__c</fullName>
+    <externalId>false</externalId>
+    <label>Organisation Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SME (small to medium enterprise)</fullName>
+                <default>false</default>
+                <label>SME (small to medium enterprise)</label>
+            </value>
+            <value>
+                <fullName>Government – International</fullName>
+                <default>false</default>
+                <label>Government – International</label>
+            </value>
+            <value>
+                <fullName>Government – Federal</fullName>
+                <default>false</default>
+                <label>Government – Federal</label>
+            </value>
+            <value>
+                <fullName>Government – State</fullName>
+                <default>false</default>
+                <label>Government – State</label>
+            </value>
+            <value>
+                <fullName>Government – Local</fullName>
+                <default>false</default>
+                <label>Government – Local</label>
+            </value>
+            <value>
+                <fullName>Large Corporate – Australian</fullName>
+                <default>false</default>
+                <label>Large Corporate – Australian</label>
+            </value>
+            <value>
+                <fullName>Large Corporate – Multinational</fullName>
+                <default>false</default>
+                <label>Large Corporate – Multinational</label>
+            </value>
+            <value>
+                <fullName>Large Corporate</fullName>
+                <default>false</default>
+                <label>Large Corporate</label>
+            </value>
+            <value>
+                <fullName>Non-government organisation (NGO)</fullName>
+                <default>false</default>
+                <label>Non-government organisation (NGO)</label>
+            </value>
+            <value>
+                <fullName>Not for profit</fullName>
+                <default>false</default>
+                <label>Not for profit</label>
+            </value>
+            <value>
+                <fullName>Publicly funded research organisation (PRFO)</fullName>
+                <default>false</default>
+                <label>Publicly funded research organisation (PRFO)</label>
+            </value>
+            <value>
+                <fullName>Cooperative Research Centre (CRC)</fullName>
+                <default>false</default>
+                <label>Cooperative Research Centre (CRC)</label>
+            </value>
+            <value>
+                <fullName>Hospitals</fullName>
+                <default>false</default>
+                <label>Hospitals</label>
+            </value>
+            <value>
+                <fullName>Grant bodies</fullName>
+                <default>false</default>
+                <label>Grant bodies</label>
+            </value>
+            <value>
+                <fullName>Trusts and Foundations</fullName>
+                <default>false</default>
+                <label>Trusts and Foundations</label>
+            </value>
+            <value>
+                <fullName>Funds / Venture Capital</fullName>
+                <default>false</default>
+                <label>Funds / Venture Capital</label>
+            </value>
+            <value>
+                <fullName>Start-ups</fullName>
+                <default>false</default>
+                <label>Start-ups</label>
+            </value>
+            <value>
+                <fullName>Schools &amp; Higher Education</fullName>
+                <default>false</default>
+                <label>Schools &amp; Higher Education</label>
+            </value>
+            <value>
+                <fullName>Business Organisation</fullName>
+                <default>false</default>
+                <label>Business Organisation</label>
+            </value>
+            <value>
+                <fullName>Partners</fullName>
+                <default>false</default>
+                <label>Partners</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Centre</fullName>
+                <default>false</default>
+                <label>Centre</label>
+            </value>
+            <value>
+                <fullName>Institute</fullName>
+                <default>false</default>
+                <label>Institute</label>
+            </value>
+            <value>
+                <fullName>College</fullName>
+                <default>false</default>
+                <label>College</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

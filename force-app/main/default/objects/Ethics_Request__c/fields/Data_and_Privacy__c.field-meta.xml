@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_and_Privacy__c</fullName>
+    <externalId>false</externalId>
+    <label>Data and Privacy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Personal Data</fullName>
+                <default>false</default>
+                <label>Personal Data</label>
+            </value>
+            <value>
+                <fullName>Health Data</fullName>
+                <default>false</default>
+                <label>Health Data</label>
+            </value>
+            <value>
+                <fullName>Sensitive Data</fullName>
+                <default>false</default>
+                <label>Sensitive Data</label>
+            </value>
+            <value>
+                <fullName>EU Data Collection</fullName>
+                <default>false</default>
+                <label>EU Data Collection</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

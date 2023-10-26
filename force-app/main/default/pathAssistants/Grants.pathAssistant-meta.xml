@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project_Proposal__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Grants</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The project is under approval. Once approved, the status moves to the next stage.&lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Researcher completes the record including Details, adds Team Members, creates Budget, attaches relevant proposal documents, CVs and draft agreements under Documents and Files tab and adds Research Codes (FOR, SEO and TOA). When the draft is complete, update the status to Review by Research Office.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tip: Use the Chatter to ask questions or share updates.&lt;/p&gt;</info>
+        <picklistValueName>Initial Draft</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;My University Research office reviews the eligibility of the project team to apply for this funding opportunity based on the scheme-specific criterion before the proposal is submitted for internal approval. &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Review by Research Office</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Grant</recordTypeName>
+</PathAssistant>

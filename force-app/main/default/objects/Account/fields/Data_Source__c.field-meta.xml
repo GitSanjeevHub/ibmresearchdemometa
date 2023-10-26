@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Source__c</fullName>
+    <externalId>false</externalId>
+    <label>Data Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data Migration</fullName>
+                <default>false</default>
+                <label>Data Migration</label>
+            </value>
+            <value>
+                <fullName>Admin Created</fullName>
+                <default>false</default>
+                <label>Admin Created</label>
+            </value>
+            <value>
+                <fullName>HR Integration</fullName>
+                <default>false</default>
+                <label>HR Integration</label>
+            </value>
+            <value>
+                <fullName>Self Nominated</fullName>
+                <default>false</default>
+                <label>Self Nominated</label>
+            </value>
+            <value>
+                <fullName>Finance Integration</fullName>
+                <default>false</default>
+                <label>Finance Integration</label>
+            </value>
+            <value>
+                <fullName>RP Integration</fullName>
+                <default>false</default>
+                <label>RP Integration</label>
+            </value>
+            <value>
+                <fullName>SIS Integration</fullName>
+                <default>false</default>
+                <label>SIS Integration</label>
+            </value>
+            <value>
+                <fullName>MyPub Integration</fullName>
+                <default>false</default>
+                <label>MyPub Integration</label>
+            </value>
+            <value>
+                <fullName>Marketing Integration</fullName>
+                <default>false</default>
+                <label>Marketing Integration</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>SFDC001</fullName>
+                <default>false</default>
+                <label>SFDC001</label>
+            </value>
+            <value>
+                <fullName>SFDC009</fullName>
+                <default>false</default>
+                <label>SFDC009</label>
+            </value>
+            <value>
+                <fullName>SFDC010</fullName>
+                <default>false</default>
+                <label>SFDC010</label>
+            </value>
+            <value>
+                <fullName>SFDC012</fullName>
+                <default>false</default>
+                <label>SFDC012</label>
+            </value>
+            <value>
+                <fullName>Remediation</fullName>
+                <default>false</default>
+                <label>Remediation</label>
+            </value>
+            <value>
+                <fullName>QSES</fullName>
+                <default>false</default>
+                <label>QSES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

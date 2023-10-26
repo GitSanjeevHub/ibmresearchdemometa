@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Organisation</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <description>Any organistion outside of my university, which: conduct, host, sponsor or fund research; employ, support or host researchers; teach research students; or allow research to be carried out under their auspices</description>
+    <label>External Organisation</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Data_Source__c</picklist>
+        <values>
+            <fullName>Admin Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Migration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyPub Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC009</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFDC012</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Nominated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry_Classification__c</picklist>
+        <values>
+            <fullName>Accommodation And Food Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Administrative And Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agriculture%2C Forestry And Fishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts And Recreation Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education And Training</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricity%2C Gas%2C Water And Waste Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial And Insurance Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Care And Social Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Media And Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional%2C Scientific And Technical Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Administration And Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rental%2C Hiring And Real Estate Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport Postal And Warehousing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesale Trade</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partnership_Level__c</picklist>
+        <values>
+            <fullName>Emerging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emerging Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Precinct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Partnership_Type__c</picklist>
+        <values>
+            <fullName>Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collaborative Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Provision Panel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DVCR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Centre%2FInstitute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research Focus Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Organisation__c</picklist>
+        <values>
+            <fullName>Business Organisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooperative Research Centre %28CRC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funds %2F Venture Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government %E2%80%93 Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government %E2%80%93 International</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government %E2%80%93 Local</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government %E2%80%93 State</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant bodies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Corporate %E2%80%93 Australian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Corporate %E2%80%93 Multinational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-government organisation %28NGO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not for profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicly funded research organisation %28PRFO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SME %28small to medium enterprise%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Schools %26 Higher Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start-ups</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trusts and Foundations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Types_of_Engagement_Opportunities__c</picklist>
+        <values>
+            <fullName>Advocacy and Influence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appointments %28e%2Eg%2E Adjunct%2C Chair%2C etc%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital Building and Master Plan - Capital raising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital Building and Master Plan - Co-location %28general%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital Building and Master Plan - Joint ventures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capital Building and Master Plan - other%28e%2Eg%2E University City of the Future%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultancy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joint Venture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philanthropy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Good - Co-branding arrangements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Good - Community engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Good - Community outreach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Good - Social%2C cultural and environmental activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Good - other %28e%2Eg%2E lectures%2C events%2C knowledge dissemination%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research %E2%80%93 other and Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - Co-location %28Research %26 Innovation Precinct%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - Collaborative research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - Contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - Industry PhDs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - Licencing %2F Spin-out %2F Commercialisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research - scholarships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start-up %2F La Trobe Accelerator Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Articulation partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Courseware licencing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Executive Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Field trip locations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Internships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Mentoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Placements %2F Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Provision of teaching materials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Student exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - Work Integrated Learning %2F Industry-Based Learning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teaching and Learning - other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor %2F Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

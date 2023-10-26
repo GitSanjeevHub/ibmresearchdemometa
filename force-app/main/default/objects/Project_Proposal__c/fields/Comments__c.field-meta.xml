@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comments__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Include instructions for this proposal. Add the Funder&apos;s name if unable to select from the Funder field below. If you are working with the Industry Engagement Portfolio include the relevant contact&apos;s name.</inlineHelpText>
+    <label>Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<template>
+
+    <div class="slds-clearfix">
+
+        <div class="slds-float_left">
+            <div style="word-wrap: break-word" onclick={handleClick}>
+                {title}
+            </div>
+        </div>
+
+        <template if:true={helpText}>
+
+            <div class="slds-float_right">
+                <lightning-helptext content={helpText}></lightning-helptext>
+            </div>
+
+        </template>
+
+    </div>
+
+</template>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>Theme__c</name>
+    <picklistValues>
+        <masterLabel>Industries and economies in the tropics</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>People and societies in the tropics, and</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tropical ecosystems, conservation and climate change</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tropical health, medicine and biosecurity</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

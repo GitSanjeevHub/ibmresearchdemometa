@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Research_Report_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Research Report Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Public sector research report</fullName>
+                <default>false</default>
+                <label>Public sector research report</label>
+            </value>
+            <value>
+                <fullName>Industry research report</fullName>
+                <default>false</default>
+                <label>Industry research report</label>
+            </value>
+            <value>
+                <fullName>Not-for-profit research report</fullName>
+                <default>false</default>
+                <label>Not-for-profit research report</label>
+            </value>
+            <value>
+                <fullName>Other research report</fullName>
+                <default>false</default>
+                <label>Other research report</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
